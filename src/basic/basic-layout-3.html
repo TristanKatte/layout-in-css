@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< Updated upstream
 
 <head>
   <meta charset="UTF-8" />
@@ -60,3 +61,45 @@
 </body>
 
 </html>
+=======
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Layout 3</title>
+    <link rel="stylesheet" href="../style.css" />
+    <style>
+      /* Doe hier jouw ding! */
+      #basic-layout-3 {
+        display: grid;
+        gap: 10px;
+        
+      }
+
+      main {
+        grid-row-start:1 ;
+        grid-row-end: span 10;
+        grid-column-start: 1;
+  grid-column-end: span auto;
+      }
+
+      footer {
+        grid-row-start: 11;
+        grid-row-end: span 2;
+        grid-column-start: 1;
+  grid-column-end: span auto;
+      }
+
+      header {
+        grid-area: header;
+
+      }
+    </style>
+  </head>
+  <body id="basic-layout-3">
+    <header><h1>Basic Layout 3</h1></header>
+    <nav><a href="../index.html">Terug naar het overzicht</a></nav>
+    <main></main>
+    <footer></footer>
+  </body>
+</html>
+>>>>>>> Stashed changes

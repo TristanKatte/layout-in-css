@@ -6,7 +6,41 @@
     <title>Basic Layout 1</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+          /* Doe hier jouw ding! */
+          #basic-layout-1 {
+            display: grid;
+            grid-template-columns: 25% 75%;
+            grid-template-rows: auto;
+            grid-template-areas:
+              "header header header header"
+              "nav main main main"
+              "nav main main main"
+              "nav main main main"
+              "nav main main main"
+              "footer footer footer footer";
+            gap: 10px;
+          }
+
+          header {
+            grid-area: header;
+          }
+
+          nav {
+            grid-area: nav;
+            grid-column-start: 1;
+            grid-column-end: 2;
+          }
+
+          main {
+            grid-area: main;
+            grid-column-start: 2;
+      grid-column-end: auto;
+   
+          }
+
+          footer {
+            grid-area: footer;
+          }
     </style>
   </head>
   <body id="basic-layout-1">

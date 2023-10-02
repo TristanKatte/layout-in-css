@@ -7,6 +7,31 @@
     <link rel="stylesheet" href="../style.css" />
     <style>
       /* Doe hier jouw ding! */
+      #basic-layout-2 {
+        display: grid;
+        gap: 10px;
+       
+        
+      }
+
+      header {
+        grid-row-start:1 ;
+        grid-row-end: span 2;
+        grid-column-start: 1;
+  grid-column-end: span auto;
+
+      }
+
+      nav {
+        grid-row-start:3 ;
+        grid-row-end: span 1;
+        
+      }
+
+      main {
+        grid-row-start: 4;
+        grid-row-end: span 18;
+      }
     </style>
   </head>
   <body id="basic-layout-2">
