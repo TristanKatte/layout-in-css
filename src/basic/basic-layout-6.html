@@ -1,18 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Basic Layout 6</title>
-    <link rel="stylesheet" href="../style.css" />
-    <style>
-      /* Doe hier jouw ding! */
-    </style>
-  </head>
-  <body id="basic-layout-6">
-    <header><h1>Basic Layout 6</h1></header>
-    <nav><a href="../index.html">Terug naar het overzicht</a></nav>
-    <main></main>
-    <footer></footer>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Basic Layout 6</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    /* Doe hier jouw ding! */
+    #basic-layout-6 {
+      display: grid;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 10px;
+    }
+
+    header {
+      grid-row-start: 1;
+      grid-column-start: 1;
+      grid-row-end: 2;
+      grid-column-end: 4;
+    }
+
+    nav {
+      grid-row-start: 2;
+      grid-column-start: 1;
+      grid-row-end: 6;
+      grid-column-end: 2;
+    }
+
+    main {
+      grid-row-start: 2;
+      grid-column-start: 2;
+      grid-row-end: 6;
+      grid-column-end: 4;
+    }
+
+    footer {
+      grid-row-start: 1;
+      grid-column-start: 4;
+      grid-row-end: 6;
+      grid-column-end: 5;
+
+    }
+  </style>
+</head>
+
+<body id="basic-layout-6">
+  <header>
+    <h1>Basic Layout 6</h1>
+  </header>
+  <nav><a href="../index.html">Terug naar het overzicht</a></nav>
+  <main></main>
+  <footer></footer>
+</body>
+
 </html>
