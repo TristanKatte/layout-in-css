@@ -10,15 +10,37 @@
     /* Doe hier jouw ding! */
     #advanced-layout-1 {
       display: grid;
-      grid-template-columns: [first] 1fr ;
-      grid-template-rows: repeat (4, 200px [first] ); 
-      gap: 20px;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows:  repeat(4, 25%);;
+      grid-template-areas:
+        ". header header header"
+        "nav nav nav ."
+        ". main main main"
+        ". footer footer footer";
+        gap: 15px;
+
     }
 
     header {
-      grid-column: 1 / span auto;
-  grid-row: first-line / auto;
+grid-area: header;
+
     }
+
+    nav {
+grid-area: nav;
+
+
+    }
+
+    main {
+      grid-area: main;
+    }
+    
+    footer {
+      grid-area: footer;
+    }
+
+   
   </style>
 </head>
 
