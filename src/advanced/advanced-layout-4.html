@@ -7,6 +7,55 @@
     <link rel="stylesheet" href="../style.css" />
     <style>
       /* Doe hier jouw ding! */
+      #advanced-layout-4 {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 15px;
+        /* transform: skewY(-5deg); */
+      }
+
+      main {
+        grid-row-start: 5;
+        grid-row-end: 8;
+        grid-column-start: 2;
+        grid-column-end: 2;
+        /* transform: skewY(-10deg); */
+        clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+        transform: translateY(-50px);
+      }
+
+
+      footer {
+        grid-row-start: 5;
+        grid-row-end:8;
+        grid-column-start: 3;
+        grid-column-end: 3;
+        /* transform: skewY(-10deg); */
+        clip-path: polygon(0 20%, 100% 0%, 100% 100%, 0% 100%);
+        transform: translateY(-110px);
+       
+      }
+
+      header {
+        grid-row-start: 1;
+        grid-row-end: 5;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        /* transform: skewY(-10deg) translateY(-15px); */
+        clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+        transform: translateY(-60px);
+      }
+
+      nav {
+        grid-row-start: 1;
+        grid-column-start: 2;
+        grid-row-end: 5;
+        grid-column-end: 2;
+        /* transform: skewY(-10deg) translateY(65px); */
+        clip-path: polygon(0 0, 100% 0%, 100% 90%, 0% 100%);
+        
+      }
     </style>
   </head>
   <body id="advanced-layout-4">
