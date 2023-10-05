@@ -1,18 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Advanced Layout 1</title>
-    <link rel="stylesheet" href="../style.css" />
-    <style>
-      /* Doe hier jouw ding! */
-    </style>
-  </head>
-  <body id="advanced-layout-1">
-    <header><h1>Advanced Layout 1</h1></header>
-    <nav><a href="../index.html">Terug naar het overzicht</a></nav>
-    <main></main>
-    <footer></footer>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Layout 1</title>
+  <link rel="stylesheet" href="../style.css" />
+  <style>
+    /* Doe hier jouw ding! */
+    #advanced-layout-1 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows:  repeat(4, 25%);;
+      grid-template-areas:
+        ". header header header"
+        "nav nav nav ."
+        ". main main main"
+        ". footer footer footer";
+        gap: 15px;
+
+    }
+
+    header {
+grid-area: header;
+
+    }
+
+    nav {
+grid-area: nav;
+
+
+    }
+
+    main {
+      grid-area: main;
+    }
+    
+    footer {
+      grid-area: footer;
+    }
+
+   
+  </style>
+</head>
+
+<body id="advanced-layout-1">
+  <header>
+    <h1>Advanced Layout 1</h1>
+  </header>
+  <nav><a href="../index.html">Terug naar het overzicht</a></nav>
+  <main></main>
+  <footer></footer>
+</body>
+
 </html>
